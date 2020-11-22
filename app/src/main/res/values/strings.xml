@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Accident Detector App</string>
+    <string name="title_activity_maps">nearBy</string>
+    <string name="google_key">AIzaSyAAZBO7_V1M9rch0gScG4LgM_eG-1ug4BM</string>
+</resources>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/location_search"
+            android:hint="Enter any place name"
+            android:ems="10"/>
+
+        
+        <ImageButton
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="onClick"
+            android:src="@drawable/places_ic_search"/>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_marginTop="245dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent"
+            tools:context="com.example.rigoeefector.celestinfinal.MapsActivity" />
+
+
+        <RelativeLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            
+            <ImageButton
+                android:id="@+id/hospital_nearby"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/hospital_new"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="#ffff"
+                android:onClick="onClick"/>
+
+
+            <ImageButton
+                android:id="@+id/policed_nearby"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:background="#fff"
+                android:onClick="onClick"
+                android:layout_alignTop="@+id/hospital_nearby"
+                android:src="@mipmap/police_new" />
+
+            <ImageView
+                android:id="@+id/ixonz"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/carnames"
+                />
+
+            <TextView
+                android:id="@+id/Xasis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/ixonz"
+                android:layout_marginEnd="91dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Yaxis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Xasis"
+                android:layout_below="@+id/Xasis"
+                android:layout_marginTop="39dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/Zaxis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ixonz"
+                android:layout_alignStart="@+id/Yaxis"
+                android:layout_marginBottom="12dp"
+                android:text="TextView" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
